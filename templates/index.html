@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosnary - Offline Dictionary</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon" />
+</head>
+<body>
+  <h1>✨ Cosnary - Offline Dictionary ✨</h1>
+  <h2>Explore the universe of words</h2>
+
+  <div class="search-container">
+    <input type="text" id="wordInput" placeholder="Celestial Word..." />
+    <select id="langSelect">
+      <option value="all galaxies">All Galaxies</option>
+    </select>
+    <button id="searchBtn">🚀 Launch Search</button>
+  </div>
+
+  <div class="output" id="outputArea">
+    Welcome to the Cosmic Dictionary
+
+    Enter a word to explore its celestial definitions
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

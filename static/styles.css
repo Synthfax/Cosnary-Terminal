@@ -1,0 +1,113 @@
+/* Galaxy vibes */
+body {
+  background: linear-gradient(to bottom, #020111, #191621, #2F1559, #4d79ff, #6a4c93);
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0; 
+  padding: 20px;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+h2 {
+  text-align: center;
+  color: #4d79ff;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.search-container {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input[type="text"], select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  background-color: rgba(255,255,255,0.9);
+}
+button {
+  background: #6a4c93;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #ff4da6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.output {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(11, 11, 26, 0.8);
+  border-radius: 12px;
+  padding: 25px;
+  min-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.6;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.definition-header {
+  color: #ff4da6;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.language {
+  color: #4d79ff;
+  font-weight: bold;
+}
+.pos {
+  color: #aaaaaa;
+  font-style: italic;
+}
+.ipa {
+  color: #4d79ff;
+}
+.message {
+  text-align: center;
+  color: #ff4da6;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="text"], select {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
